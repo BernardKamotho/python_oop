@@ -17,5 +17,15 @@ class Triangle(Shape):
     def area(self):
         return self.width * self.height * 0.5
 
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return  self.radius**2 * 3.14
+
+
 triangle = Triangle(4, 2)
+cicle = Circle(7)
 print("The area of the triangle is:", triangle.area())
+print("The area of the circle is:", cicle.area())
